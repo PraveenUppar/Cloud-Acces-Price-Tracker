@@ -1,0 +1,279 @@
+* {
+  padding: 0%;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  background-color: white;
+}
+
+.Container,
+.Layout {
+  border-radius: 10px;
+  background-color: #8b93ff;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+}
+.header {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 46px;
+  text-align: center;
+  background-color: #5356ff;
+  border-radius: 10px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.Country {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 7px 10px 17px 1px #000000;
+}
+
+.region-edit-button {
+  color: white;
+  background-color: #222222;
+  border: 3.5px solid #222222;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 21px;
+  padding-right: 21px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.region-select {
+  color: white;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 21px;
+  padding-right: 21px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.region-save-button {
+  color: white;
+  background-color: #222222;
+  border: 3.5px solid #222222;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 21px;
+  padding-right: 21px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.Data-store,
+.Cool,
+.Days,
+.Retrieve,
+.IOPS,
+.Users,
+.Capacity {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  border: 1px solid black;
+  border-radius: 10px;
+  column-gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 18px;
+  box-shadow: 7px 10px 17px 1px #000000;
+}
+
+.data-edit-button {
+  color: white;
+  background-color: #222222;
+  border: 3.5px solid #222222;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 21px;
+  padding-right: 21px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  opacity: 1;
+}
+.data-save-btn {
+  color: white;
+  background-color: #222222;
+  border: 3.5px solid #222222;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 21px;
+  padding-right: 21px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 18px;
+  opacity: 1;
+}
+
+.data-input-text {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.data-input {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.calculator-container {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  display: flexbox;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.Monthly-saving {
+  border-radius: 10px;
+}
+
+.month-calculator {
+  display: flexbox;
+  border: 1px solid black;
+  border-radius: 10px;
+  column-gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 10px;
+  font-size: 24px;
+  box-shadow: 5px 5px 0px 1px #000000;
+}
+.calculator-container2 {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  font-size: 24px;
+  box-shadow: 5px 5px 0px 1px #000000;
+  background-color: #4ccd99;
+}
+.month-saving,
+.price {
+  color: rgb(2, 158, 2);
+}
+.without_cool {
+  color: red;
+}
+.withcool-components,
+.with-cool {
+  color: rgb(2, 158, 2);
+}
+.annual-saving,
+.month-price {
+  color: #000000;
+}
+.annual-calculator {
+  display: flexbox;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 10px;
+  font-size: 24px;
+  box-shadow: 5px 5px 0px 1px #000000;
+}
+.iops-container {
+  margin: 10px;
+  padding: 10px;
+}
+
+.iops-outputs2 {
+  display: inline-block;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  padding: 10px;
+  box-shadow: 5px 5px 0px 1px #000000;
+  background-color: #4ccd99;
+}
+.iops-outputs {
+  display: inline-block;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  padding: 10px;
+  box-shadow: 5px 5px 0px 1px #000000;
+  background-color: #8b93ff;
+}
+.subscription {
+  display: flex;
+  justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-style: normal;
+}
+
+.sub2 {
+  display: inline-block;
+  margin-top: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  column-gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 18px;
+  box-shadow: 5px 5px 0px 1px #000000;
+  background-color: #4ccd99;
+}
+
+.sub {
+  display: inline-block;
+  margin-top: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  column-gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 18px;
+  box-shadow: 5px 5px 0px 1px #000000;
+  background-color: #8b93ff;
+}
