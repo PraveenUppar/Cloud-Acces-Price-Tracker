@@ -10,6 +10,7 @@ import Iops from "./components/Iops/iops";
 import TotalUsers from "./components/Total-Users/total_users";
 import Capacity from "./components/Capacity/capacity";
 import IopsCalculation from "./components/Iops-Calculation/Iops-main";
+import SavingsChart from "./components/Charts/SavingsChart";
 import "./App.css";
 
 const App = () => {
@@ -93,6 +94,10 @@ const App = () => {
           </div>
           
           <div className="results-section">
+            <div className="results-card fade-in">
+              <SavingsChart />
+            </div>
+            
             <div className="results-card fade-in">
               <IopsCalculation />
             </div>
