@@ -2,18 +2,21 @@ import React from "react";
 
 const View = (props) => {
   return (
-    <>
-      <h3 className="data-input-text">
-        Percentage of data to be cool: <b>{props.cool_percent} %</b>
-      </h3>
+    <div className="input-group">
+      <div className="display-value">
+        <div className="value-label">Cool Data Percentage</div>
+        <div className="value-text">
+          {props.cool_percent}<span className="value-unit">%</span>
+        </div>
+      </div>
       <button
-        className="data-edit-button"
+        className="btn btn-secondary"
         type="button"
         onClick={props.handleEditClick}
       >
-        Edit
+        Edit Percentage
       </button>
-    </>
+    </div>
   );
 };
 

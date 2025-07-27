@@ -3,22 +3,24 @@ import React, { useState } from "react";
 const Edit = (props) => {
   const [value, setValue] = useState(props.cool_percent);
   return (
-    <div className="data-container">
+    <div className="input-group">
+      <label className="input-label">Cool Data Percentage (%)</label>
       <input
         required="required"
-        className="data-input"
+        className="input-field"
         type="number"
-        id="name"
+        placeholder="Enter percentage (0-100)"
+        min="0"
+        max="100"
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
-      <br></br>
       <button
-        className="data-save-btn"
+        className="btn btn-primary"
         type="button"
         onClick={() => props.handleSaveClick(value)}
       >
-        Save
+        Save Percentage
       </button>
     </div>
   );

@@ -2,18 +2,21 @@ import React from "react";
 
 const View = (props) => {
   return (
-    <>
-      <h3 className="data-input-text">
-        Total Amount of Data (Tibs): <b>{props.data_size} Tb</b>
-      </h3>
+    <div className="input-group">
+      <div className="display-value">
+        <div className="value-label">Total Data Storage</div>
+        <div className="value-text">
+          {props.data_size} <span className="value-unit">TB</span>
+        </div>
+      </div>
       <button
-        className="data-edit-button"
+        className="btn btn-secondary"
         type="button"
         onClick={props.handleEditClick}
       >
-        Edit
+        Edit Amount
       </button>
-    </>
+    </div>
   );
 };
 

@@ -2,16 +2,19 @@ import React from "react";
 
 const View = (props) => {
   return (
-    <>
-      <h2>Selected Region: {props.region} </h2>
+    <div className="input-group">
+      <div className="display-value">
+        <div className="value-label">Selected Region</div>
+        <div className="value-text">{props.region}</div>
+      </div>
       <button
-        className="region-edit-button"
+        className="btn btn-secondary"
         type="button"
         onClick={props.handleEditClick}
       >
         Edit
       </button>
-    </>
+    </div>
   );
 };
 

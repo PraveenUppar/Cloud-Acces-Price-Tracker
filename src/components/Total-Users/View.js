@@ -2,19 +2,21 @@ import React from "react";
 
 const View = (props) => {
   return (
-    <>
-      <h3 className="data-input-text">
-        {" "}
-        Total No of Users : <b>{props.total_users}</b>
-      </h3>
+    <div className="input-group">
+      <div className="display-value">
+        <div className="value-label">Total Users</div>
+        <div className="value-text">
+          {props.total_users.toLocaleString()} <span className="value-unit">Users</span>
+        </div>
+      </div>
       <button
-        className="data-edit-button"
+        className="btn btn-secondary"
         type="button"
         onClick={props.handleEditClick}
       >
-        Edit
+        Edit Users
       </button>
-    </>
+    </div>
   );
 };
 

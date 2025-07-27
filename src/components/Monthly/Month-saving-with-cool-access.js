@@ -119,44 +119,58 @@ const MonthSavingCool = () => {
   // Region calculation
 
   return (
-    <div className="calculator-container">
-      <div className="calculator-container2">
-        <div className="month-calculator">
-          <h1 className="month-saving">
-            <div className="month-price"> Monthly Saving </div> $
-            {monthly_saving}
-          </h1>
-          <hr></hr>
-          <h2 className="without_cool">
-            <div className="month-price">Without Cool Access</div> $
-            {Without_cool}
-          </h2>
-          <hr></hr>
-          <h2 className="with-cool">
-            <div className="month-price">With Cool Access</div> ${Total_saving}
-          </h2>
-          <h2 className="withcool-components">
-            Hot : ${standard_cool_month_2}
-            <br></br>
-            Cool : ${Month_2_cool_cost}
-            <br></br>
-            Network : ${Retrieve_Cost}
-            <hr></hr>
-          </h2>
+    <div>
+      <h2 className="results-title">Cost Analysis & Savings</h2>
+      
+      <div className="savings-grid">
+        <div className="savings-card">
+          <div className="savings-amount">${monthly_saving}</div>
+          <div className="savings-label">Monthly Savings</div>
         </div>
-        <div className="annual-calculator">
-          <h1 className="annual-saving">Annual Savings</h1>
-          <hr></hr>
-          <h2 className="year-saving">
-            Year 1 : <div className="price">${year_1}</div>
-            <hr></hr>
-            Year 2 : <div className="price">${year_2}</div>
-            <hr></hr>
-            Year 3 : <div className="price">${year_3}</div>
-            <hr></hr>
-            Year 4 : <div className="price">${year_4}</div>
-            <hr></hr>
-          </h2>
+      </div>
+      
+      <div className="cost-comparison">
+        <div className="cost-item">
+          <div className="cost-amount cost-without">${Without_cool}</div>
+          <div className="cost-label">Without Cool Access</div>
+        </div>
+        <div className="cost-item">
+          <div className="cost-amount cost-with">${Total_saving}</div>
+          <div className="cost-label">With Cool Access</div>
+        </div>
+      </div>
+      
+      <div className="cost-comparison">
+        <div className="cost-item">
+          <div className="cost-amount">${standard_cool_month_2}</div>
+          <div className="cost-label">Hot Storage Cost</div>
+        </div>
+        <div className="cost-item">
+          <div className="cost-amount">${Month_2_cool_cost}</div>
+          <div className="cost-label">Cool Storage Cost</div>
+        </div>
+        <div className="cost-item">
+          <div className="cost-amount">${Retrieve_Cost}</div>
+          <div className="cost-label">Network Cost</div>
+        </div>
+      </div>
+      
+      <div className="savings-grid">
+        <div className="savings-card">
+          <div className="savings-amount">${year_1}</div>
+          <div className="savings-label">Year 1 Savings</div>
+        </div>
+        <div className="savings-card">
+          <div className="savings-amount">${year_2}</div>
+          <div className="savings-label">Year 2 Savings</div>
+        </div>
+        <div className="savings-card">
+          <div className="savings-amount">${year_3}</div>
+          <div className="savings-label">Year 3 Savings</div>
+        </div>
+        <div className="savings-card">
+          <div className="savings-amount">${year_4}</div>
+          <div className="savings-label">Year 4 Savings</div>
         </div>
       </div>
     </div>

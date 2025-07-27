@@ -40,34 +40,41 @@ const Iops = () => {
   azure_files_premium_Calculation = azure_files_premium * Total_Capacity;
 
   return (
-    <div className="iops-container">
-      <div className="iops-outputs2">
-        <h2 className="iops-outputs">
-          Total IOPS Required:{Total_iops_required}
-        </h2>
-        <h2 className="iops-outputs">Total Capacity:{Total_Capacity}gb</h2>
+    <div className="iops-section">
+      <h2 className="iops-title">IOPS Analysis & Subscription Options</h2>
+      
+      <div className="iops-summary">
+        <div className="iops-summary-item">
+          <div className="iops-value">{Total_iops_required.toLocaleString()}</div>
+          <div className="iops-label">Total IOPS Required</div>
+        </div>
+        <div className="iops-summary-item">
+          <div className="iops-value">{Total_Capacity.toLocaleString()}</div>
+          <div className="iops-label">Total Capacity (GB)</div>
+        </div>
       </div>
-      <div className="subscription">
-        <h2>
-          <div className="sub2">
-            <div className="sub">
-              Standard ANF : {standard_ANF_Calculation} IOPS
-            </div>
-            <div className="sub">
-              {" "}
-              Premium ANF : {premium_ANF_Calculation} IOPS
-            </div>
-            <div className="sub"> Ultra ANF : {ultra_ANF_Calculation} IOPS</div>
-            <div className="sub">
-              {" "}
-              Azure files : {azure_files_Calculation} IOPS
-            </div>
-            <div className="sub">
-              {" "}
-              Azure files Premium : {azure_files_premium_Calculation} IOPS
-            </div>
-          </div>
-        </h2>
+      
+      <div className="subscription-grid">
+        <div className="subscription-card">
+          <div className="subscription-name">Standard ANF</div>
+          <div className="subscription-value">{standard_ANF_Calculation.toLocaleString()} IOPS</div>
+        </div>
+        <div className="subscription-card">
+          <div className="subscription-name">Premium ANF</div>
+          <div className="subscription-value">{premium_ANF_Calculation.toLocaleString()} IOPS</div>
+        </div>
+        <div className="subscription-card">
+          <div className="subscription-name">Ultra ANF</div>
+          <div className="subscription-value">{ultra_ANF_Calculation.toLocaleString()} IOPS</div>
+        </div>
+        <div className="subscription-card">
+          <div className="subscription-name">Azure Files</div>
+          <div className="subscription-value">{azure_files_Calculation.toLocaleString()} IOPS</div>
+        </div>
+        <div className="subscription-card">
+          <div className="subscription-name">Azure Files Premium</div>
+          <div className="subscription-value">{azure_files_premium_Calculation.toLocaleString()} IOPS</div>
+        </div>
       </div>
     </div>
   );

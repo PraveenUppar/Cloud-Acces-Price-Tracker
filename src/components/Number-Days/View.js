@@ -2,17 +2,19 @@ import React from "react";
 
 const View = (props) => {
   return (
-    <div className="data-container">
-      <h3 className="data-input-text">
-        {" "}
-        No of Days : <b>{props.days_cool} Days</b>
-      </h3>
+    <div className="input-group">
+      <div className="display-value">
+        <div className="value-label">Cool Storage Duration</div>
+        <div className="value-text">
+          {props.days_cool} <span className="value-unit">Days</span>
+        </div>
+      </div>
       <button
         type="button"
-        className="data-edit-button"
+        className="btn btn-secondary"
         onClick={props.handleEditClick}
       >
-        Edit
+        Edit Duration
       </button>
     </div>
   );
