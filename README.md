@@ -14,8 +14,6 @@ Whether you're managing a 100 TB dataset in Australia and aiming to save $126 mo
 2.  Features
 3.  Installation
 4.  Usage
-5.  Contributing
-6.  License
 
 <br/>
 
