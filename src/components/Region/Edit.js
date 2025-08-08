@@ -3,35 +3,32 @@ import React, { useState } from "react";
 const Edit = (props) => {
   const [value, setValue] = useState(props.region);
   return (
-    <>
+    <div className="input-group">
+      <label className="input-label">Choose Region</label>
       <select
         required="required"
-        className="region-select"
-        type="number"
-        id="name"
+        className="select-field"
         value={value}
         onChange={(event) => setValue(event.target.value)}
       >
         <option id="Australia" value="Australia">
-          Australia
+          🇦🇺 Australia
         </option>
         <option id="US" value="US">
-          US
+          🇺🇸 United States
         </option>
         <option id="India" value="India">
-          India
+          🇮🇳 India
         </option>
       </select>
-      <br></br>
-      <br></br>
       <button
-        className="region-save-button"
+        className="btn btn-primary"
         type="button"
         onClick={() => props.handleSaveClick(value)}
       >
-        Save
+        Save Region
       </button>
-    </>
+    </div>
   );
 };
 

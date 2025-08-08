@@ -2,18 +2,21 @@ import React from "react";
 
 const View = (props) => {
   return (
-    <>
-      <h3 className="data-input-text">
-        Retrieve Percentage: <b>{props.data_retrieve} %</b>
-      </h3>
+    <div className="input-group">
+      <div className="display-value">
+        <div className="value-label">Data Retrieval Percentage</div>
+        <div className="value-text">
+          {props.data_retrieve}<span className="value-unit">%</span>
+        </div>
+      </div>
       <button
-        className="data-edit-button"
+        className="btn btn-secondary"
         type="button"
         onClick={props.handleEditClick}
       >
-        Edit
+        Edit Retrieval
       </button>
-    </>
+    </div>
   );
 };
 
